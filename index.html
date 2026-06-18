@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Legends of the Alamo</title>
+
+  <style>
+    body {
+      margin: 0;
+      background: #0e0e0e;
+      color: #f5f0e8;
+      font-family: Georgia, "Times New Roman", serif;
+      text-align: center;
+    }
+
+    .page {
+      max-width: 1500px;
+      margin: 0 auto;
+      padding: 28px 24px 40px;
+    }
+
+    .hero {
+      width: 85%;
+      max-width: 1250px;
+      height: auto;
+      display: block;
+      margin: 0 auto 18px;
+      box-shadow: 0 0 40px rgba(0,0,0,.7);
+    }
+
+    .learn {
+      color: #d7aa3b;
+      font-size: 1.6rem;
+      font-weight: bold;
+      margin: 12px 0 28px;
+    }
+
+    h1 {
+      font-size: clamp(2.6rem, 6vw, 5.5rem);
+      margin: 20px 0 20px;
+      letter-spacing: 2px;
+      color: #f4f4f4;
+    }
+
+    h2 {
+      color: #d7aa3b;
+      font-size: clamp(1.6rem, 3vw, 2.4rem);
+      margin: 0 0 22px;
+    }
+
+    .intro {
+      max-width: 980px;
+      margin: 0 auto 36px;
+      font-size: clamp(1.1rem, 2vw, 1.45rem);
+      line-height: 1.35;
+      font-weight: bold;
+    }
+
+    .tagline {
+      color: #d7aa3b;
+      font-size: clamp(1.3rem, 2.4vw, 2rem);
+      font-weight: bold;
+      margin: 28px 0 8px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .subtag {
+      font-size: 1.25rem;
+      margin-bottom: 28px;
+    }
+
+    .showcase {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 14px;
+      margin: 32px auto;
+      max-width: 1380px;
+    }
+
+    .card {
+      background: #141414;
+      border: 1px solid rgba(215,170,59,.25);
+      box-shadow: 0 0 20px rgba(0,0,0,.5);
+      padding-bottom: 16px;
+    }
+
+    .card img {
+      width: 100%;
+      display: block;
+      aspect-ratio: 4 / 3;
+      object-fit: cover;
+    }
+
+    .card h3 {
+      color: #d7aa3b;
+      font-size: 1.05rem;
+      margin: 14px 10px 8px;
+      text-transform: uppercase;
+      line-height: 1.25;
+    }
+
+    .card p {
+      margin: 0 14px;
+      font-size: 1rem;
+      line-height: 1.25;
+    }
+
+    .cta {
+      margin-top: 38px;
+    }
+
+    .cta h2 {
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 8px;
+    }
+
+    .button {
+      display: inline-block;
+      margin: 18px 0 34px;
+      padding: 16px 48px;
+      background: #a30000;
+      color: #fff;
+      text-decoration: none;
+      font-size: 1.35rem;
+      font-weight: bold;
+      border-radius: 8px;
+    }
+
+    .button:hover {
+      background: #c00000;
+    }
+
+    .links {
+      color: #d7aa3b;
+      font-size: 1.15rem;
+      line-height: 1.9;
+    }
+
+    .links a {
+      color: #d7aa3b;
+      text-decoration: none;
+    }
+
+    .links a:hover {
+      text-decoration: underline;
+    }
+
+    .note {
+      color: #bfbfbf;
+      margin-top: 28px;
+      font-size: 1rem;
+    }
+
+    @media (max-width: 1000px) {
+      .hero {
+        width: 100%;
+      }
+
+      .showcase {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 600px) {
+      .page {
+        padding: 18px 14px 32px;
+      }
+
+      .showcase {
+        grid-template-columns: 1fr;
+      }
+
+      .button {
+        width: 80%;
+        padding: 14px 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="page">
+
+    <img src="hero.webp" alt="Legends of the Alamo hero artwork" class="hero" />
+
+    <div class="learn">↓ Learn More ↓</div>
+
+    <h1>LEGENDS OF THE ALAMO</h1>
+
+    <h2>Experience the 13-Day Siege</h2>
+
+    <p class="intro">
+      A new historical collectible experience is coming soon.
+      Join us as we bring the people, stories, artifacts, and legends of the Alamo
+      to life through premium collectible cards.
+    </p>
+
+    <div class="tagline">18 Premium Collectible Cards. Endless Stories.</div>
+    <div class="subtag">Display. Collect. Explore.</div>
+
+    <section class="showcase">
+      <div class="card">
+        <img src="display-card.webp" alt="Single collectible card displayed in a frame" />
+        <h3>A Story Worth Displaying</h3>
+        <p>Display your favorite piece of history.</p>
+      </div>
+
+      <div class="card">
+        <img src="collector-page.webp" alt="Nine card collector page" />
+        <h3>Build the Collection</h3>
+        <p>Each card brings the Alamo story to life.</p>
+      </div>
+
+      <div class="card">
+        <img src="complete-set.webp" alt="Complete eighteen card set in two collector pages" />
+        <h3>The Complete 18-Card Set</h3>
+        <p>Two 9-card pages. One legendary story.</p>
+      </div>
+
+      <div class="card">
+        <img src="exhibit.webp" alt="Cards displayed on small stands like a museum exhibit" />
+        <h3>Create Your Own Historical Exhibit</h3>
+        <p>Display. Share. Remember.</p>
+      </div>
+
+      <div class="card">
+        <img src="qr-phone.webp" alt="Physical collectible card beside phone with expanded digital story" />
+        <h3>Physical Cards. Digital Stories.</h3>
+        <p>Scan to explore expanded stories, images, and more.</p>
+      </div>
+    </section>
+
+    <section class="cta">
+      <h2>Be the First to Know When We Launch</h2>
+      <p class="subtag">Join our list for updates, behind-the-scenes content, and launch day access.</p>
+
+      <a class="button" href="mailto:info@legendsofthealamo.com?subject=Notify Me About Legends of the Alamo">
+        Notify Me
+      </a>
+    </section>
+
+    <div class="links">
+      <div><a href="https://facebook.com/LegendsOfTheAlamo">Facebook.com/LegendsOfTheAlamo</a></div>
+      <div><a href="mailto:info@legendsofthealamo.com">info@legendsofthealamo.com</a></div>
+      <div><a href="https://legendsofthealamo.com">LegendsOfTheAlamo.com</a></div>
+    </div>
+
+    <p class="note">
+      Representative artwork shown. Final card designs may differ.
+    </p>
+
+  </main>
+</body>
+</html>
