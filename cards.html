@@ -37,6 +37,8 @@
       display: block;
       margin: 30px auto;
       border: 1px solid rgba(215,170,59,.4);
+      /* Ensures the image doesn't stretch and maintains aspect ratio */
+      object-fit: contain; 
     }
 
     .button {
@@ -48,11 +50,17 @@
       text-decoration: none;
       border-radius: 8px;
       font-weight: bold;
+      transition: background 0.3s ease;
+    }
+    
+    .button:hover {
+      background: #c00000;
     }
 
     .note {
       color: #bfbfbf;
       margin-top: 30px;
+      font-size: 0.9rem;
     }
   </style>
 </head>
@@ -63,15 +71,16 @@
     <h1>Sample Cards</h1>
 
     <p>
-      Representative concepts showing how Legends of the Alamo cards
+      Representative concepts showing how Legends of the Alamo cards 
       can be displayed, collected, and explored.
     </p>
 
-   <img src="Website-image.png"
-     alt="Legends of the Alamo sample cards"
-     class="preview">
+    <img src="Website-image.png" 
+         alt="Legends of the Alamo sample cards" 
+         class="preview">
+
     <p>
-      Each card tells the story of a person, place, artifact,
+      Each card tells the story of a person, place, artifact, 
       or moment from the Alamo.
     </p>
 
