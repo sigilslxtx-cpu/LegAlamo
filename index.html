@@ -19,26 +19,19 @@
       padding: 24px 18px 40px;
     }
 
- img.hero {
-  width: 70%;
-  max-width: 800px;
-  height: auto;
-  display: block;
-  margin: 0 auto 12px;
-}
+    img.hero {
+      width: 70%;
+      max-width: 800px;
+      height: auto;
+      display: block;
+      margin: 0 auto 12px;
+    }
 
     .learn {
       color: #d7aa3b;
       font-size: 1.5rem;
       font-weight: bold;
       margin: 8px 0 34px;
-    }
-
-    h1 {
-      font-size: clamp(2.5rem, 7vw, 5.2rem);
-      margin: 0 0 24px;
-      color: #f4f4f4;
-      letter-spacing: 2px;
     }
 
     h2 {
@@ -77,15 +70,41 @@
       font-weight: bold;
     }
 
+    .muster {
+      margin: 36px auto 28px;
+      max-width: 760px;
+      padding: 28px 18px;
+      border: 1px solid rgba(215,170,59,.35);
+      background: rgba(255,255,255,.025);
+    }
+
+    .muster h2 {
+      margin-bottom: 14px;
+    }
+
+    .muster p {
+      max-width: 680px;
+      margin: 0 auto 20px;
+      font-size: clamp(1.1rem, 2.3vw, 1.35rem);
+      line-height: 1.45;
+    }
+
     .button {
       display: inline-block;
-      margin: 24px 0 36px;
+      margin: 12px 0 10px;
       padding: 16px 48px;
       background: #a30000;
       color: white;
       text-decoration: none;
       border-radius: 8px;
       font-size: 1.3rem;
+      font-weight: bold;
+    }
+
+    .muster-note {
+      color: #d7aa3b;
+      margin-top: 12px;
+      font-style: italic;
       font-weight: bold;
     }
 
@@ -125,10 +144,9 @@
 
 <body>
   <main>
-<img src="hero.png" alt="Legends of the Alamo artwork" class="hero" />
+    <img src="hero.png" alt="Legends of the Alamo artwork" class="hero" />
+
     <div class="learn">↓ Learn More ↓</div>
-
-
 
     <h2>Experience the 13-Day Siege</h2>
 
@@ -143,9 +161,21 @@
       <div class="white">Display. Collect. Explore.</div>
     </section>
 
-    <a class="button" href="mailto:info@legendsofthealamo.com?subject=Notify Me About Legends of the Alamo">
-      Notify Me
-    </a>
+    <section class="muster">
+      <h2>Join the Muster</h2>
+
+      <p>
+        Be among the first to receive artwork previews,
+        historical discoveries, and launch updates for
+        Legends of the Alamo.
+      </p>
+
+      <a class="button" href="mailto:info@legendsofthealamo.com?subject=Join%20the%20Muster">
+        Join the Muster
+      </a>
+
+      <div class="muster-note">13 Days Are Coming.</div>
+    </section>
 
     <div class="links">
       <div><a href="https://facebook.com/LegendsOfTheAlamo">Facebook.com/LegendsOfTheAlamo</a></div>
