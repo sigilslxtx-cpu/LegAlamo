@@ -61,29 +61,34 @@
       margin-top: 35px;
       display: flex;
       justify-content: center;
-      gap: 16px;
+      gap: 40px;
       flex-wrap: wrap;
     }
 
     .cta-box {
-      max-width: 320px;
+      max-width: 340px;
+    }
+
+    .cta-email {
+      margin: 0 0 12px;
+      font-size: 1rem;
+      font-weight: bold;
+    }
+
+    .cta-email a {
+      color: #d7aa3b;
+      text-decoration: none;
+    }
+
+    .cta-email a:hover {
+      text-decoration: underline;
     }
 
     .cta-text {
       font-size: 0.95rem;
       line-height: 1.5;
       color: #cfc7b5;
-      margin-top: 12px;
-    }
-
-    .cta-text a {
-      color: #d7aa3b;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    .cta-text a:hover {
-      text-decoration: underline;
+      margin-top: 14px;
     }
 
     .button {
@@ -172,6 +177,11 @@
     <div class="cta-row">
 
       <div class="cta-box">
+
+        <p class="cta-email">
+          <a href="mailto:info@sigilslxtx.com">info@sigilslxtx.com</a>
+        </p>
+
         <a
           class="button"
           href="mailto:info@sigilslxtx.com?subject=Join%20the%20Muster">
@@ -179,15 +189,13 @@
         </a>
 
         <p class="cta-text">
-          <a href="mailto:info@sigilslxtx.com">info@sigilslxtx.com</a>
-        </p>
-
-        <p class="cta-text">
           Join the email list for project updates, previews, and launch announcements.
         </p>
+
       </div>
 
       <div class="cta-box">
+
         <a
           class="button secondary"
           href="mailto:info@sigilslxtx.com?subject=Support%20Legends%20of%20the%20Alamo">
@@ -197,6 +205,7 @@
         <p class="cta-text">
           Help fund historical research, prototype development, and launch preparation.
         </p>
+
       </div>
 
     </div>
