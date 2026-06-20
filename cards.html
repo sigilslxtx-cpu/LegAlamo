@@ -23,11 +23,14 @@
     h1 {
       color: #d7aa3b;
       font-size: clamp(2rem, 5vw, 4rem);
+      margin-bottom: 20px;
     }
 
     p {
       font-size: 1.2rem;
-      line-height: 1.5;
+      line-height: 1.6;
+      max-width: 800px;
+      margin: 20px auto;
     }
 
     .preview {
@@ -36,51 +39,65 @@
       height: auto;
       display: block;
       margin: 30px auto;
-      border: 1px solid rgba(215,170,59,.4);
-      /* Ensures the image doesn't stretch and maintains aspect ratio */
-      object-fit: contain; 
+      border: 1px solid rgba(215,170,59,0.35);
+      box-shadow: 0 0 20px rgba(0,0,0,0.5);
+      transition: transform 0.2s ease;
+      cursor: zoom-in;
+    }
+
+    .preview:hover {
+      transform: scale(1.02);
     }
 
     .button {
       display: inline-block;
-      margin: 20px;
-      padding: 14px 36px;
-      background: #a30000;
-      color: white;
+      margin-top: 30px;
+      padding: 12px 24px;
+      background: #d7aa3b;
+      color: #0e0e0e;
       text-decoration: none;
-      border-radius: 8px;
       font-weight: bold;
-      transition: background 0.3s ease;
-    }
-    
-    .button:hover {
-      background: #c00000;
+      border-radius: 4px;
+      transition: opacity 0.2s ease;
     }
 
-    .note {
-      color: #bfbfbf;
-      margin-top: 30px;
-      font-size: 0.9rem;
+    .button:hover {
+      opacity: 0.85;
+    }
+
+    .hint {
+      color: #c9b27a;
+      font-size: 0.95rem;
+      margin-top: -10px;
+      margin-bottom: 30px;
     }
   </style>
 </head>
 
 <body>
+
   <main>
 
     <h1>Sample Cards</h1>
 
     <p>
-      Representative concepts showing how Legends of the Alamo cards 
+      Representative concepts showing how Legends of the Alamo cards
       can be displayed, collected, and explored.
     </p>
 
-    <img src="Website image.png" 
-         alt="Legends of the Alamo sample cards" 
-         class="preview">
+    <a href="Website image.png" target="_blank" rel="noopener noreferrer">
+      <img
+        src="Website image.png"
+        alt="Legends of the Alamo sample cards"
+        class="preview">
+    </a>
+
+    <p class="hint">
+      Click image to view full size.
+    </p>
 
     <p>
-      Each card tells the story of a person, place, artifact, 
+      Each card tells the story of a person, place, artifact,
       or moment from the Alamo.
     </p>
 
@@ -88,10 +105,7 @@
       ← Back to Home
     </a>
 
-    <p class="note">
-      Representative artwork shown. Final card designs may differ.
-    </p>
-
   </main>
+
 </body>
 </html>
