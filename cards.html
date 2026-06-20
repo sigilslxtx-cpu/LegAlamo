@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Legends of the Alamo</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sample Cards | Legends of the Alamo</title>
 
   <style>
     body {
@@ -17,182 +17,112 @@
     main {
       max-width: 1200px;
       margin: 0 auto;
-      padding: 24px 18px 40px;
+      padding: 30px 20px 50px;
     }
 
-    img.hero {
-      width: 70%;
+    h1 {
+      color: #d7aa3b;
+      font-size: clamp(2rem, 5vw, 4rem);
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 1.15rem;
+      line-height: 1.7;
       max-width: 800px;
+      margin: 20px auto;
+    }
+
+    .preview {
+      width: 100%;
+      max-width: 700px;
       height: auto;
       display: block;
-      margin: 0 auto 12px;
+      margin: 35px auto;
+      border: 1px solid rgba(215,170,59,0.35);
+      box-shadow: 0 0 20px rgba(0,0,0,0.5);
     }
 
-    .full-size {
-      margin: 6px 0 30px;
-      font-size: 1.25rem;
-      font-weight: bold;
-    }
-
-    .full-size a {
-      color: #d7aa3b;
-      text-decoration: none;
-    }
-
-    h2 {
-      color: #d7aa3b;
-      font-size: clamp(1.7rem, 4vw, 2.5rem);
-      margin: 0 0 24px;
-    }
-
-    .copy {
-      max-width: 900px;
-      margin: 0 auto;
-      font-size: clamp(1.15rem, 2.5vw, 1.55rem);
-      line-height: 1.35;
-      font-weight: bold;
-    }
-
-    .statement {
-      margin: 46px auto 28px;
-      padding: 24px 18px;
-      max-width: 850px;
-      border-top: 1px solid rgba(215,170,59,.35);
-      border-bottom: 1px solid rgba(215,170,59,.35);
-    }
-
-    .statement .gold {
-      color: #d7aa3b;
-      font-size: clamp(1.4rem, 3.5vw, 2rem);
-      font-weight: bold;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      margin-bottom: 10px;
-    }
-
-    .statement .white {
-      font-size: clamp(1.2rem, 3vw, 1.7rem);
-      font-weight: bold;
+    .cta-row {
+      margin-top: 35px;
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      flex-wrap: wrap;
     }
 
     .button {
       display: inline-block;
-      margin: 12px 8px 10px;
-      padding: 16px 48px;
-      background: #a30000;
-      color: white;
+      padding: 12px 24px;
+      background: #d7aa3b;
+      color: #0e0e0e;
       text-decoration: none;
-      border-radius: 8px;
-      font-size: 1.3rem;
       font-weight: bold;
+      border-radius: 4px;
+      transition: opacity 0.2s ease;
     }
 
-    .button.secondary {
+    .button:hover {
+      opacity: 0.85;
+    }
+
+    .secondary {
       background: transparent;
+      color: #d7aa3b;
       border: 1px solid #d7aa3b;
-      color: #d7aa3b;
     }
 
-    .muster {
-      margin: 36px auto 28px;
-      max-width: 760px;
-      padding: 28px 18px;
-      border: 1px solid rgba(215,170,59,.35);
-      background: rgba(255,255,255,.025);
-    }
-
-    .muster p {
-      max-width: 680px;
-      margin: 0 auto 20px;
-      font-size: clamp(1.1rem, 2.3vw, 1.35rem);
-      line-height: 1.45;
-    }
-
-    .muster-note {
-      color: #d7aa3b;
-      margin-top: 12px;
-      font-style: italic;
-      font-weight: bold;
-    }
-
-    .links {
-      color: #d7aa3b;
-      font-size: 1.15rem;
-      line-height: 1.9;
-    }
-
-    .links a {
+    .back {
+      margin-top: 40px;
+      display: inline-block;
       color: #d7aa3b;
       text-decoration: none;
-    }
-
-    .note {
-      color: #bfbfbf;
-      margin-top: 34px;
       font-size: 1rem;
     }
 
-    @media (max-width: 600px) {
-      img.hero {
-        width: 100%;
-      }
-
-      .button {
-        width: 75%;
-        padding: 14px 18px;
-      }
+    .back:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 
 <body>
+
   <main>
-    <img src="hero.png" alt="Legends of the Alamo artwork" class="hero" />
 
-    <div class="full-size">
-      <a href="cards.html">View Full Size</a>
-    </div>
+    <h1>Sample Cards</h1>
 
-    <h2>Experience the 13-Day Siege</h2>
-
-    <p class="copy">
-      A new historical collectible experience is coming soon.
-      Join us as we bring the people, stories, artifacts, and legends of the Alamo
-      to life through premium collectible cards.
+    <p>
+      Explore early examples from <strong>Legends of the Alamo</strong>,
+      a collectible experience that brings the 13-day siege to life through
+      people, places, artifacts, and pivotal moments.
     </p>
 
-    <section class="statement">
-<div class="gold">HISTORY YOU CAN HOLD</div>
-      <div class="white">Display. Collect. Explore.</div>
-    </section>
+    <img
+      src="Website image.png"
+      alt="Legends of the Alamo sample cards"
+      class="preview">
 
-    <a class="button" href="mailto:info@legendsofthealamo.com?subject=Join%20the%20Muster">
-      Join the Muster
-    </a>
+    <p>
+      Every card is designed to deliver an immediate connection to history,
+      with opportunities to explore deeper stories and historical context.
+    </p>
 
-    <a class="button secondary" href="support.html">
-      Support the Project
-    </a>
+    <div class="cta-row">
+      <a class="button" href="mailto:sigilslxtx@gmail.com?subject=Join%20the%20Muster">
+        Join the Muster
+      </a>
 
-    <section class="muster">
-      <p>
-        Be among the first to receive artwork previews,
-        historical discoveries, and launch updates for
-        <em>Legends of the Alamo</em>.
-      </p>
-
-      <div class="muster-note">13 Days Are Coming.</div>
-    </section>
-
-    <div class="links">
-      <div><a href="https://facebook.com/LegendsOfTheAlamo">Facebook.com/LegendsOfTheAlamo</a></div>
-      <div><a href="mailto:info@legendsofthealamo.com">info@legendsofthealamo.com</a></div>
-      <div><a href="https://legendsofthealamo.com">LegendsOfTheAlamo.com</a></div>
+      <a class="button secondary" href="mailto:sigilslxtx@gmail.com?subject=Support%20Legends%20of%20the%20Alamo">
+        Support the Project
+      </a>
     </div>
 
-    <p class="note">
-      Representative artwork shown. Final card designs may differ.
-    </p>
+    <a class="back" href="index.html">
+      ← Back to Home
+    </a>
+
   </main>
+
 </body>
 </html>
