@@ -32,7 +32,27 @@
       width: 100%;
       max-width: 900px;
       height: auto;
-      margin: 0 auto 30px;
+      margin: 0 auto 18px;
+    }
+
+    .scroll-indicator {
+      color: #d7aa3b;
+      font-size: 1.25rem;
+      font-weight: bold;
+      margin: 0 0 30px;
+      animation: bounce 2s infinite;
+    }
+
+    @keyframes bounce {
+      0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+      }
+      40% {
+        transform: translateY(6px);
+      }
+      60% {
+        transform: translateY(3px);
+      }
     }
 
     h1 {
@@ -136,62 +156,70 @@
       .signup {
         padding: 30px 16px 28px;
       }
+
+      .scroll-indicator {
+        font-size: 1.1rem;
+      }
     }
   </style>
 </head>
 
 <body>
- <main>
+  <main>
 
-  <div class="top-line"></div>
+    <div class="top-line"></div>
 
-  <img
-    class="hero-img"
-    src="hero.png"
-    alt="Legends of the Alamo hero image"
-  >
+    <img
+      class="hero-img"
+      src="hero.png"
+      alt="Legends of the Alamo hero image"
+    >
 
-  <h2 class="tagline">18 CARDS. 13 DAYS. ONE STORY.</h2>
+    <div class="scroll-indicator">
+      Scroll for More ↓
+    </div>
 
-  <p class="subtag">Display. Collect. Explore.</p>
+    <h2 class="tagline">18 CARDS. 13 DAYS. ONE STORY.</h2>
 
-  <div class="button-row">
-    <a class="btn btn-red" href="cards.html">Preview the Collection</a>
-  </div>
+    <p class="subtag">Display. Collect. Explore.</p>
 
-  <h1>Experience the 13-Day Siege</h1>
+    <div class="button-row">
+      <a class="btn btn-red" href="cards.html">
+        Preview the Collection
+      </a>
+    </div>
 
-  <p class="intro">
-    A new historical collectible experience is coming soon.
-    Join us as we bring the people, stories, artifacts, and legends
-    of the Alamo to life.
-  </p>
+    <h1>Experience the 13-Day Siege</h1>
 
- <div class="button-row">
-  <a
-    class="btn btn-red"
-    href="mailto:sigilslxtx@gmail.com?subject=Join%20the%20Muster%20-%20Legends%20of%20the%20Alamo"
-  >
-    Join the Muster
-  </a>
-</div>
-<p class="email-fallback">
-  Or email: <a href="mailto:sigilslxtx@gmail.com">sigilslxtx@gmail.com</a>
-</p>
-  <section class="signup">
-    <p>
-      Be among the first to receive artwork previews, historical discoveries,
-      and launch updates for <em>Legends of the Alamo</em>.
+    <p class="intro">
+      A new historical collectible experience is coming soon.
+      Join us as we bring the people, stories, artifacts, and legends
+      of the Alamo to life.
     </p>
 
-  <a
-  class="btn btn-red"
-  href="support.html"
->
-  Support the Project
-</a>
-  </section>
+    <div class="button-row">
+      <a
+        class="btn btn-red"
+        href="mailto:sigilslxtx@gmail.com?subject=Join%20the%20Muster%20-%20Legends%20of%20the%20Alamo"
+      >
+        Join the Muster
+      </a>
+    </div>
 
-</main>
+    <section class="signup">
+      <p>
+        Be among the first to receive artwork previews, historical discoveries,
+        and launch updates for <em>Legends of the Alamo</em>.
+      </p>
+
+      <a
+        class="btn btn-red"
+        href="support.html"
+      >
+        Support the Project
+      </a>
+    </section>
+
+  </main>
 </body>
 </html>
