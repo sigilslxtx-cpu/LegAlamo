@@ -17,59 +17,90 @@
     main {
       max-width: 1200px;
       margin: 0 auto;
-      padding: 30px 20px;
+      padding: 40px 20px;
     }
 
     h1 {
       color: #d7aa3b;
-      font-size: clamp(2rem, 5vw, 4rem);
-      margin-bottom: 20px;
+      font-size: clamp(2.5rem, 6vw, 5rem);
+      line-height: 1.1;
+      margin: 20px 0 15px;
     }
 
-    p {
-      font-size: 1.2rem;
-      line-height: 1.6;
-      max-width: 800px;
-      margin: 20px auto;
+    .intro {
+      color: #d7aa3b;
+      font-size: clamp(1.5rem, 4vw, 3rem);
+      font-weight: bold;
+      line-height: 1.15;
+      margin: 0 auto 35px;
+      max-width: 1000px;
     }
 
     .preview {
       width: 100%;
-      max-width: 700px;
+      max-width: 900px;
       height: auto;
       display: block;
-      margin: 30px auto;
+      margin: 0 auto 18px;
       border: 1px solid rgba(215,170,59,0.35);
       box-shadow: 0 0 20px rgba(0,0,0,0.5);
-      transition: transform 0.2s ease;
-      cursor: zoom-in;
     }
 
-    .preview:hover {
-      transform: scale(1.02);
+    .supporting-text {
+      color: #f5f0e8;
+      font-size: 1.2rem;
+      line-height: 1.6;
+      max-width: 800px;
+      margin: 0 auto 30px;
+    }
+
+    .button-row {
+      display: flex;
+      justify-content: center;
+      gap: 18px;
+      flex-wrap: wrap;
+      margin-top: 25px;
     }
 
     .button {
       display: inline-block;
-      margin-top: 30px;
-      padding: 12px 24px;
+      padding: 14px 26px;
       background: #d7aa3b;
       color: #0e0e0e;
       text-decoration: none;
       font-weight: bold;
-      border-radius: 4px;
-      transition: opacity 0.2s ease;
+      border-radius: 6px;
+      font-size: 1.1rem;
+    }
+
+    .button.secondary {
+      background: transparent;
+      color: #d7aa3b;
+      border: 2px solid #d7aa3b;
     }
 
     .button:hover {
       opacity: 0.85;
     }
 
-    .hint {
+    .view-full {
+      display: inline-block;
+      margin-top: 18px;
       color: #c9b27a;
-      font-size: 0.95rem;
-      margin-top: -10px;
-      margin-bottom: 30px;
+      text-decoration: underline;
+      font-size: 1rem;
+    }
+
+    .back-link {
+      display: block;
+      margin-top: 40px;
+      color: #c9b27a;
+      text-decoration: none;
+      font-size: 1rem;
+    }
+
+    .back-link:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
@@ -78,30 +109,36 @@
 
   <main>
 
-    <h1>Sample Cards</h1>
+    <h1>Experience the 13-Day Siege</h1>
 
-    <p>
-      Representative concepts showing how Legends of the Alamo cards
-      can be displayed, collected, and explored.
+    <div class="intro">
+      Be Among the First to Collect the Legends of the Alamo.
+    </div>
+
+    <img
+      src="Website image.png"
+      alt="Legends of the Alamo sample cards"
+      class="preview">
+
+    <p class="supporting-text">
+      A new historical collectible experience is coming soon.
     </p>
 
-    <a href="Website image.png" target="_blank" rel="noopener noreferrer">
-      <img
-        src="Website image.png"
-        alt="Legends of the Alamo sample cards"
-        class="preview">
+    <div class="button-row">
+      <a class="button" href="mailto:info@legendsofthealamo.com">
+        Join the Muster
+      </a>
+
+      <a class="button secondary" href="mailto:info@legendsofthealamo.com">
+        Support the Project
+      </a>
+    </div>
+
+    <a class="view-full" href="Website image.png" target="_blank" rel="noopener noreferrer">
+      View Full Size
     </a>
 
-    <p class="hint">
-      Click image to view full size.
-    </p>
-
-    <p>
-      Each card tells the story of a person, place, artifact,
-      or moment from the Alamo.
-    </p>
-
-    <a class="button" href="index.html">
+    <a class="back-link" href="index.html">
       ← Back to Home
     </a>
 
