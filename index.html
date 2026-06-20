@@ -23,19 +23,8 @@
     h1 {
       color: #d7aa3b;
       font-size: clamp(2.5rem, 6vw, 5rem);
-      margin: 30px 0 15px;
       line-height: 1.1;
-    }
-
-    .tagline {
-      color: #d7aa3b;
-      font-size: clamp(1.5rem, 4vw, 3rem);
-      font-weight: bold;
-      line-height: 1.15;
-      margin: 0 auto 30px;
-      text-transform: uppercase;
-      letter-spacing: 0.06em;
-      max-width: 1000px;
+      margin: 20px 0 40px;
     }
 
     .preview {
@@ -43,34 +32,44 @@
       max-width: 900px;
       height: auto;
       display: block;
-      margin: 30px auto 12px;
+      margin: 0 auto;
       border: 1px solid rgba(215,170,59,0.35);
       box-shadow: 0 0 20px rgba(0,0,0,0.5);
       cursor: zoom-in;
+      transition: transform 0.2s ease;
     }
 
-    .hint {
-      color: #c9b27a;
-      font-size: 0.95rem;
-      margin: 0 auto 35px;
+    .preview:hover {
+      transform: scale(1.01);
     }
 
-    p {
+    .cta {
+      color: #d7aa3b;
+      font-size: clamp(2rem, 5vw, 4rem);
+      font-weight: bold;
+      line-height: 1.15;
+      margin: 50px auto 15px;
+      max-width: 1000px;
+    }
+
+    .subtext {
+      color: #f5f0e8;
       font-size: 1.2rem;
       line-height: 1.6;
-      max-width: 850px;
-      margin: 20px auto;
+      max-width: 800px;
+      margin: 0 auto 30px;
     }
 
     .button {
       display: inline-block;
-      margin-top: 30px;
+      margin-top: 20px;
       padding: 12px 24px;
       background: #d7aa3b;
       color: #0e0e0e;
       text-decoration: none;
       font-weight: bold;
       border-radius: 4px;
+      transition: opacity 0.2s ease;
     }
 
     .button:hover {
@@ -85,11 +84,6 @@
 
     <h1>Experience the 13-Day Siege</h1>
 
-    <div class="tagline">
-      18 Premium Collectible Cards.<br>
-      Collect 13 Days of History.
-    </div>
-
     <a href="Website image.png" target="_blank" rel="noopener noreferrer">
       <img
         src="Website image.png"
@@ -97,15 +91,12 @@
         class="preview">
     </a>
 
-    <p class="hint">Click image to view full size.</p>
+    <h2 class="cta">
+      Be Among the First to Collect the Legends of the Alamo.
+    </h2>
 
-    <p>
+    <p class="subtext">
       A new historical collectible experience is coming soon.
-    </p>
-
-    <p>
-      Explore the people, places, artifacts, and final days of the Alamo
-      through a premium collectible card series.
     </p>
 
     <a class="button" href="index.html">
