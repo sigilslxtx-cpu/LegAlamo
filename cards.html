@@ -61,19 +61,21 @@
       margin-top: 35px;
       display: flex;
       justify-content: center;
-      align-items: flex-start;
-      gap: 40px;
+      gap: 80px;
       flex-wrap: wrap;
+      align-items: flex-start;
     }
 
     .cta-box {
-      max-width: 340px;
+      width: 340px;
+      text-align: center;
     }
 
     .cta-email {
-      margin: 10px 0 0;
-      font-size: 0.95rem;
+      margin: 0 0 18px;
+      font-size: 1rem;
       font-weight: bold;
+      height: 28px;
     }
 
     .cta-email a {
@@ -85,11 +87,11 @@
       text-decoration: underline;
     }
 
-    .cta-text {
-      font-size: 0.95rem;
-      line-height: 1.5;
-      color: #cfc7b5;
-      margin-top: 14px;
+    .button-row {
+      height: 64px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
 
     .button {
@@ -101,7 +103,6 @@
       font-weight: bold;
       border-radius: 4px;
       transition: opacity 0.2s ease;
-      cursor: pointer;
     }
 
     .button:hover {
@@ -112,6 +113,13 @@
       background: transparent;
       color: #d7aa3b;
       border: 1px solid #d7aa3b;
+    }
+
+    .cta-text {
+      font-size: 0.95rem;
+      line-height: 1.5;
+      color: #cfc7b5;
+      margin-top: 14px;
     }
 
     .back {
@@ -134,6 +142,10 @@
 
       p {
         font-size: 1.05rem;
+      }
+
+      .cta-box {
+        width: 100%;
       }
 
       .button {
@@ -179,33 +191,43 @@
 
       <div class="cta-box">
 
-        <a
-          class="button"
-          href="mailto:info@sigilslxtx.com?subject=Join%20the%20Muster">
-          Join the Muster
-        </a>
+        <div class="cta-email">
+          <a href="mailto:info@sigilslxtx.com">
+            info@sigilslxtx.com
+          </a>
+        </div>
 
-        <p class="cta-email">
-          <a href="mailto:info@sigilslxtx.com">info@sigilslxtx.com</a>
-        </p>
+        <div class="button-row">
+          <a
+            class="button"
+            href="mailto:info@sigilslxtx.com?subject=Join%20the%20Muster">
+            Join the Muster
+          </a>
+        </div>
 
-        <p class="cta-text">
+        <div class="cta-text">
           Join the email list for project updates, previews, and launch announcements.
-        </p>
+        </div>
 
       </div>
 
       <div class="cta-box">
 
-        <a
-          class="button secondary"
-          href="mailto:info@sigilslxtx.com?subject=Support%20Legends%20of%20the%20Alamo">
-          Support the Project
-        </a>
+        <div class="cta-email">
+          &nbsp;
+        </div>
 
-        <p class="cta-text">
+        <div class="button-row">
+          <a
+            class="button secondary"
+            href="mailto:info@sigilslxtx.com?subject=Support%20Legends%20of%20the%20Alamo">
+            Support the Project
+          </a>
+        </div>
+
+        <div class="cta-text">
           Help fund historical research, prototype development, and launch preparation.
-        </p>
+        </div>
 
       </div>
 
