@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Legends of the Alamo</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sample Cards | Legends of the Alamo</title>
+
   <style>
     body {
       margin: 0;
@@ -16,180 +17,102 @@
     main {
       max-width: 1200px;
       margin: 0 auto;
-      padding: 24px 18px 40px;
+      padding: 40px 20px;
     }
 
-    img.hero {
-      width: 70%;
-      max-width: 800px;
+    h1 {
+      color: #d7aa3b;
+      font-size: clamp(2.5rem, 6vw, 5rem);
+      margin: 30px 0 15px;
+      line-height: 1.1;
+    }
+
+    .tagline {
+      color: #d7aa3b;
+      font-size: clamp(1.5rem, 4vw, 3rem);
+      font-weight: bold;
+      line-height: 1.15;
+      margin: 0 auto 30px;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      max-width: 1000px;
+    }
+
+    .preview {
+      width: 100%;
+      max-width: 900px;
       height: auto;
       display: block;
-      margin: 0 auto 12px;
+      margin: 30px auto 12px;
+      border: 1px solid rgba(215,170,59,0.35);
+      box-shadow: 0 0 20px rgba(0,0,0,0.5);
+      cursor: zoom-in;
     }
 
-    .learn {
-      color: #d7aa3b;
-      font-size: 1.5rem;
-      font-weight: bold;
-      margin: 8px 0 34px;
+    .hint {
+      color: #c9b27a;
+      font-size: 0.95rem;
+      margin: 0 auto 35px;
     }
 
-    h2 {
-      color: #d7aa3b;
-      font-size: clamp(1.7rem, 4vw, 2.5rem);
-      margin: 0 0 24px;
-    }
-
-    .copy {
-      max-width: 900px;
-      margin: 0 auto;
-      font-size: clamp(1.15rem, 2.5vw, 1.55rem);
-      line-height: 1.35;
-      font-weight: bold;
-    }
-
-    .statement {
-      margin: 46px auto 28px;
-      padding: 24px 18px;
+    p {
+      font-size: 1.2rem;
+      line-height: 1.6;
       max-width: 850px;
-      border-top: 1px solid rgba(215,170,59,.35);
-      border-bottom: 1px solid rgba(215,170,59,.35);
-    }
-
-    .statement .gold {
-      color: #d7aa3b;
-      font-size: clamp(1.4rem, 3.5vw, 2rem);
-      font-weight: bold;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      margin-bottom: 10px;
-    }
-
-    .statement .white {
-      font-size: clamp(1.2rem, 3vw, 1.7rem);
-      font-weight: bold;
-    }
-
-    .muster {
-      margin: 36px auto 28px;
-      max-width: 760px;
-      padding: 28px 18px;
-      border: 1px solid rgba(215,170,59,.35);
-      background: rgba(255,255,255,.025);
-    }
-
-    .muster h2 {
-      margin-bottom: 14px;
-    }
-
-    .muster p {
-      max-width: 680px;
-      margin: 0 auto 20px;
-      font-size: clamp(1.1rem, 2.3vw, 1.35rem);
-      line-height: 1.45;
+      margin: 20px auto;
     }
 
     .button {
       display: inline-block;
-      margin: 12px 0 10px;
-      padding: 16px 48px;
-      background: #a30000;
-      color: white;
+      margin-top: 30px;
+      padding: 12px 24px;
+      background: #d7aa3b;
+      color: #0e0e0e;
       text-decoration: none;
-      border-radius: 8px;
-      font-size: 1.3rem;
       font-weight: bold;
+      border-radius: 4px;
     }
 
-    .muster-note {
-      color: #d7aa3b;
-      margin-top: 12px;
-      font-style: italic;
-      font-weight: bold;
-    }
-
-    .links {
-      color: #d7aa3b;
-      font-size: 1.15rem;
-      line-height: 1.9;
-    }
-
-    .links a {
-      color: #d7aa3b;
-      text-decoration: none;
-    }
-
-    .note {
-      color: #bfbfbf;
-      margin-top: 34px;
-      font-size: 1rem;
-    }
-
-    @media (max-width: 600px) {
-      img.hero {
-        width: 100%;
-      }
-
-      .learn {
-        margin-bottom: 28px;
-      }
-
-      .button {
-        width: 75%;
-        padding: 14px 18px;
-      }
+    .button:hover {
+      opacity: 0.85;
     }
   </style>
 </head>
 
 <body>
+
   <main>
-    <img src="hero.png" alt="Legends of the Alamo artwork" class="hero" />
 
-    <div class="learn">↓ Learn More ↓</div>
+    <h1>Experience the 13-Day Siege</h1>
 
-    <h2>Experience the 13-Day Siege</h2>
-
-    <p class="copy">
-      A new historical collectible experience is coming soon.
-      Join us as we bring the people, stories, artifacts, and legends of the Alamo
-      to life through premium collectible cards.
-    </p>
-
-    <section class="statement">
-      <div class="gold">18 Premium Collectible Cards. Endless Stories.</div>
-      <div class="white">Display. Collect. Explore.</div>
-    </section>
-
-
-<a class="button" href="cards.html">
-  View Sample Cards
-</a>
-    <section class="muster">
-      <h2>Join the Muster</h2>
-
-      <p>
-        Be among the first to receive artwork previews,
-        historical discoveries, and launch updates for
-        Legends of the Alamo.
-      </p>
-
-      <a class="button" href="mailto:info@legendsofthealamo.com?subject=Join%20the%20Muster">
-        Join the Muster
-      </a>
-
-      <div class="muster-note">13 Days Are Coming.</div>
-    </section>
-
-    <div class="links">
-      <div><a href="https://facebook.com/LegendsOfTheAlamo">Facebook.com/LegendsOfTheAlamo</a></div>
-      <div><a href="mailto:info@legendsofthealamo.com">info@legendsofthealamo.com</a></div>
-      <div><a href="https://legendsofthealamo.com">LegendsOfTheAlamo.com</a></div>
+    <div class="tagline">
+      18 Premium Collectible Cards.<br>
+      Collect 13 Days of History.
     </div>
 
-    <p class="note">
-      Representative artwork shown. Final card designs may differ.
+    <a href="Website image.png" target="_blank" rel="noopener noreferrer">
+      <img
+        src="Website image.png"
+        alt="Legends of the Alamo sample cards"
+        class="preview">
+    </a>
+
+    <p class="hint">Click image to view full size.</p>
+
+    <p>
+      A new historical collectible experience is coming soon.
     </p>
+
+    <p>
+      Explore the people, places, artifacts, and final days of the Alamo
+      through a premium collectible card series.
+    </p>
+
+    <a class="button" href="index.html">
+      ← Back to Home
+    </a>
+
   </main>
+
 </body>
 </html>
