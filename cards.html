@@ -33,6 +33,11 @@
       margin: 20px auto;
     }
 
+    .image-link {
+      display: inline-block;
+      line-height: 0;
+    }
+
     .preview {
       width: 55%;
       max-width: 650px;
@@ -48,13 +53,8 @@
       display: block;
       margin: 0 auto 30px;
       color: #d7aa3b;
-      text-decoration: none;
       font-weight: bold;
       font-size: 1.1rem;
-    }
-
-    .zoom-link:hover {
-      text-decoration: underline;
     }
 
     .cta-row {
@@ -66,26 +66,28 @@
     }
 
     .cta-box {
-  max-width: 320px;
-}
+      max-width: 320px;
+    }
 
-.cta-text {
-  font-size: 0.95rem;
-  line-height: 1.5;
-  color: #cfc7b5;
-  margin-top: 12px;
-}
+    .cta-text {
+      font-size: 0.95rem;
+      line-height: 1.5;
+      color: #cfc7b5;
+      margin-top: 12px;
+    }
+
     .button {
-  display: inline-block;
-  padding: 12px 24px;
- background: #b40000;
-color: #ffffff;
-  text-decoration: none;
-  font-weight: bold;
-  border-radius: 4px;
-  transition: opacity 0.2s ease;
-}
-    .Sbutton:hover {
+      display: inline-block;
+      padding: 12px 24px;
+      background: #b40000;
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 4px;
+      transition: opacity 0.2s ease;
+    }
+
+    .button:hover {
       opacity: 0.85;
     }
 
@@ -137,43 +139,43 @@ color: #ffffff;
       people, places, artifacts, and pivotal moments.
     </p>
 
-    <a href="website-image.png" target="_blank">
+    <a href="website-image.png" target="_blank" class="image-link">
       <img
         src="website-image.png"
         alt="Legends of the Alamo sample cards"
         class="preview">
     </a>
 
- <a href="website-image.png" target="_blank" class="zoom-link">
-  Click image to view full-size preview
-</a>
+    <div class="zoom-link">
+      Click image to view full-size preview
+    </div>
 
     <p>
       Every card is designed to deliver an immediate connection to history,
       with opportunities to explore deeper stories and historical context.
     </p>
 
-<div class="cta-row">
+    <div class="cta-row">
 
-  <div class="cta-box">
-    <a class="button" href="mailto:info@legendsofthealamo.com?subject=Join%20the%20Muster">
-      Join the Muster
-    </a>
-    <p class="cta-text">
-      Join the email list for project updates, previews, and launch announcements.
-    </p>
-  </div>
+      <div class="cta-box">
+        <a class="button" href="mailto:info@legendsofthealamo.com?subject=Join%20the%20Muster">
+          Join the Muster
+        </a>
+        <p class="cta-text">
+          Join the email list for project updates, previews, and launch announcements.
+        </p>
+      </div>
 
-  <div class="cta-box">
-    <a class="button secondary" href="mailto:info@legendsofthealamo.com?subject=Support%20Legends%20of%20the%20Alamo">
-      Support the Project
-    </a>
-    <p class="cta-text">
-      Help fund historical research, prototype development, and launch preparation.
-    </p>
-  </div>
+      <div class="cta-box">
+        <a class="button secondary" href="mailto:info@legendsofthealamo.com?subject=Support%20Legends%20of%20the%20Alamo">
+          Support the Project
+        </a>
+        <p class="cta-text">
+          Help fund historical research, prototype development, and launch preparation.
+        </p>
+      </div>
 
-</div>
+    </div>
 
     <a class="back" href="index.html">
       ← Back to Home
