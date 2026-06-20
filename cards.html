@@ -76,6 +76,16 @@
       margin-top: 12px;
     }
 
+    .cta-text a {
+      color: #d7aa3b;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .cta-text a:hover {
+      text-decoration: underline;
+    }
+
     .button {
       display: inline-block;
       padding: 12px 24px;
@@ -85,6 +95,7 @@
       font-weight: bold;
       border-radius: 4px;
       transition: opacity 0.2s ease;
+      cursor: pointer;
     }
 
     .button:hover {
@@ -122,6 +133,7 @@
       .button {
         width: 80%;
         max-width: 280px;
+        box-sizing: border-box;
       }
     }
   </style>
@@ -140,11 +152,12 @@
     </p>
 
     <div class="image-wrap">
-      <img
-        src="website-image.png"
-        alt="Legends of the Alamo sample cards"
-        class="preview"
-        onclick="window.open('website-image.png','_blank')">
+      <a href="website-image.png" target="_blank">
+        <img
+          src="website-image.png"
+          alt="Legends of the Alamo sample cards"
+          class="preview">
+      </a>
     </div>
 
     <div class="zoom-link">
@@ -159,18 +172,28 @@
     <div class="cta-row">
 
       <div class="cta-box">
-        <a class="button" href="mailto:info@legendsofthealamo.com?subject=Join%20the%20Muster">
+        <a
+          class="button"
+          href="mailto:info@sigilslxtx.com?subject=Join%20the%20Muster">
           Join the Muster
         </a>
+
+        <p class="cta-text">
+          <a href="mailto:info@sigilslxtx.com">info@sigilslxtx.com</a>
+        </p>
+
         <p class="cta-text">
           Join the email list for project updates, previews, and launch announcements.
         </p>
       </div>
 
       <div class="cta-box">
-        <a class="button secondary" href="mailto:info@legendsofthealamo.com?subject=Support%20Legends%20of%20the%20Alamo">
+        <a
+          class="button secondary"
+          href="mailto:info@sigilslxtx.com?subject=Support%20Legends%20of%20the%20Alamo">
           Support the Project
         </a>
+
         <p class="cta-text">
           Help fund historical research, prototype development, and launch preparation.
         </p>
