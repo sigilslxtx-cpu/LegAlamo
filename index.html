@@ -91,6 +91,10 @@
       margin: 24px 0 52px;
     }
 
+    .join-row {
+      margin-bottom: 14px;
+    }
+
     .btn {
       display: inline-block;
       min-width: 330px;
@@ -112,6 +116,20 @@
       color: #d7aa3b;
       border: 1px solid #d7aa3b;
       background: transparent;
+    }
+
+    .email-link {
+      display: inline-block;
+      color: #d7aa3b;
+      font-size: clamp(1.15rem, 2.5vw, 1.8rem);
+      font-weight: bold;
+      text-decoration: none;
+      margin: 0 auto 42px;
+      word-break: break-word;
+    }
+
+    .email-link:hover {
+      text-decoration: underline;
     }
 
     .signup {
@@ -151,6 +169,15 @@
       .button-row {
         gap: 16px;
         margin-bottom: 36px;
+      }
+
+      .join-row {
+        margin-bottom: 12px;
+      }
+
+      .email-link {
+        font-size: 1.15rem;
+        margin-bottom: 34px;
       }
 
       .signup {
@@ -197,7 +224,7 @@
       of the Alamo to life.
     </p>
 
-    <div class="button-row">
+    <div class="button-row join-row">
       <a
         class="btn btn-red"
         href="mailto:sigilslxtx@gmail.com?subject=Join%20the%20Muster%20-%20Legends%20of%20the%20Alamo"
@@ -205,6 +232,13 @@
         Join the Muster
       </a>
     </div>
+
+    <a
+      class="email-link"
+      href="mailto:sigilslxtx@gmail.com?subject=Join%20the%20Muster%20-%20Legends%20of%20the%20Alamo"
+    >
+      sigilslxtx@gmail.com
+    </a>
 
     <section class="signup">
       <p>
