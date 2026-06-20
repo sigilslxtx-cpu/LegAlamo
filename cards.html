@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sample Cards | Legends of the Alamo</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Legends of the Alamo</title>
 
   <style>
     body {
@@ -17,132 +17,182 @@
     main {
       max-width: 1200px;
       margin: 0 auto;
-      padding: 40px 20px;
+      padding: 24px 18px 40px;
     }
 
-    h1 {
-      color: #d7aa3b;
-      font-size: clamp(2.5rem, 6vw, 5rem);
-      line-height: 1.1;
-      margin: 20px 0 15px;
-    }
-
-    .intro {
-      color: #d7aa3b;
-      font-size: clamp(1.5rem, 4vw, 3rem);
-      font-weight: bold;
-      line-height: 1.15;
-      margin: 0 auto 35px;
-      max-width: 1000px;
-    }
-
-    .preview {
-      width: 100%;
-      max-width: 900px;
+    img.hero {
+      width: 70%;
+      max-width: 800px;
       height: auto;
       display: block;
-      margin: 0 auto 18px;
-      border: 1px solid rgba(215,170,59,0.35);
-      box-shadow: 0 0 20px rgba(0,0,0,0.5);
+      margin: 0 auto 12px;
     }
 
-    .supporting-text {
-      color: #f5f0e8;
-      font-size: 1.2rem;
-      line-height: 1.6;
-      max-width: 800px;
-      margin: 0 auto 30px;
+    .full-size {
+      margin: 6px 0 30px;
+      font-size: 1.25rem;
+      font-weight: bold;
     }
 
-    .button-row {
-      display: flex;
-      justify-content: center;
-      gap: 18px;
-      flex-wrap: wrap;
-      margin-top: 25px;
+    .full-size a {
+      color: #d7aa3b;
+      text-decoration: none;
+    }
+
+    h2 {
+      color: #d7aa3b;
+      font-size: clamp(1.7rem, 4vw, 2.5rem);
+      margin: 0 0 24px;
+    }
+
+    .copy {
+      max-width: 900px;
+      margin: 0 auto;
+      font-size: clamp(1.15rem, 2.5vw, 1.55rem);
+      line-height: 1.35;
+      font-weight: bold;
+    }
+
+    .statement {
+      margin: 46px auto 28px;
+      padding: 24px 18px;
+      max-width: 850px;
+      border-top: 1px solid rgba(215,170,59,.35);
+      border-bottom: 1px solid rgba(215,170,59,.35);
+    }
+
+    .statement .gold {
+      color: #d7aa3b;
+      font-size: clamp(1.4rem, 3.5vw, 2rem);
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 10px;
+    }
+
+    .statement .white {
+      font-size: clamp(1.2rem, 3vw, 1.7rem);
+      font-weight: bold;
     }
 
     .button {
       display: inline-block;
-      padding: 14px 26px;
-      background: #d7aa3b;
-      color: #0e0e0e;
+      margin: 12px 8px 10px;
+      padding: 16px 48px;
+      background: #a30000;
+      color: white;
       text-decoration: none;
+      border-radius: 8px;
+      font-size: 1.3rem;
       font-weight: bold;
-      border-radius: 6px;
-      font-size: 1.1rem;
     }
 
     .button.secondary {
       background: transparent;
+      border: 1px solid #d7aa3b;
       color: #d7aa3b;
-      border: 2px solid #d7aa3b;
     }
 
-    .button:hover {
-      opacity: 0.85;
+    .muster {
+      margin: 36px auto 28px;
+      max-width: 760px;
+      padding: 28px 18px;
+      border: 1px solid rgba(215,170,59,.35);
+      background: rgba(255,255,255,.025);
     }
 
-    .view-full {
-      display: inline-block;
-      margin-top: 18px;
-      color: #c9b27a;
-      text-decoration: underline;
-      font-size: 1rem;
+    .muster p {
+      max-width: 680px;
+      margin: 0 auto 20px;
+      font-size: clamp(1.1rem, 2.3vw, 1.35rem);
+      line-height: 1.45;
     }
 
-    .back-link {
-      display: block;
-      margin-top: 40px;
-      color: #c9b27a;
+    .muster-note {
+      color: #d7aa3b;
+      margin-top: 12px;
+      font-style: italic;
+      font-weight: bold;
+    }
+
+    .links {
+      color: #d7aa3b;
+      font-size: 1.15rem;
+      line-height: 1.9;
+    }
+
+    .links a {
+      color: #d7aa3b;
       text-decoration: none;
+    }
+
+    .note {
+      color: #bfbfbf;
+      margin-top: 34px;
       font-size: 1rem;
     }
 
-    .back-link:hover {
-      text-decoration: underline;
+    @media (max-width: 600px) {
+      img.hero {
+        width: 100%;
+      }
+
+      .button {
+        width: 75%;
+        padding: 14px 18px;
+      }
     }
   </style>
 </head>
 
 <body>
-
   <main>
+    <img src="hero.png" alt="Legends of the Alamo artwork" class="hero" />
 
-    <h1>Experience the 13-Day Siege</h1>
-
-    <div class="intro">
-      Be Among the First to Collect the Legends of the Alamo.
+    <div class="full-size">
+      <a href="cards.html">View Full Size</a>
     </div>
 
-    <img
-      src="Website image.png"
-      alt="Legends of the Alamo sample cards"
-      class="preview">
+    <h2>Experience the 13-Day Siege</h2>
 
-    <p class="supporting-text">
+    <p class="copy">
       A new historical collectible experience is coming soon.
+      Join us as we bring the people, stories, artifacts, and legends of the Alamo
+      to life through premium collectible cards.
     </p>
 
-    <div class="button-row">
-      <a class="button" href="mailto:info@legendsofthealamo.com">
-        Join the Muster
-      </a>
+    <section class="statement">
+<div class="gold">HISTORY YOU CAN HOLD</div>
+      <div class="white">Display. Collect. Explore.</div>
+    </section>
 
-      <a class="button secondary" href="mailto:info@legendsofthealamo.com">
-        Support the Project
-      </a>
+    <a class="button" href="mailto:info@legendsofthealamo.com?subject=Join%20the%20Muster">
+      Join the Muster
+    </a>
+
+    <a class="button secondary" href="support.html">
+      Support the Project
+    </a>
+
+    <section class="muster">
+      <p>
+        Be among the first to receive artwork previews,
+        historical discoveries, and launch updates for
+        <em>Legends of the Alamo</em>.
+      </p>
+
+      <div class="muster-note">13 Days Are Coming.</div>
+    </section>
+
+    <div class="links">
+      <div><a href="https://facebook.com/LegendsOfTheAlamo">Facebook.com/LegendsOfTheAlamo</a></div>
+      <div><a href="mailto:info@legendsofthealamo.com">info@legendsofthealamo.com</a></div>
+      <div><a href="https://legendsofthealamo.com">LegendsOfTheAlamo.com</a></div>
     </div>
 
-    <a class="view-full" href="Website image.png" target="_blank" rel="noopener noreferrer">
-      View Full Size
-    </a>
-
-    <a class="back-link" href="index.html">
-      ← Back to Home
-    </a>
-
+    <p class="note">
+      Representative artwork shown. Final card designs may differ.
+    </p>
   </main>
-
 </body>
 </html>
